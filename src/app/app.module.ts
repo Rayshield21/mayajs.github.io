@@ -19,6 +19,10 @@ import { ValidationComponent } from './components/validation/validation.componen
 import { RouterComponent } from './components/router/router.component';
 import { MiddlewareComponent } from './components/middleware/middleware.component';
 import { HighlightJsModule } from 'ngx-highlight-js';
+import { GamesAPIComponent } from './components/games-api/games-api.component';
+import { mayaTxtComponent } from './shareables/components/maya-txt/maya-txt.component';
+import { GamesApiP2Component } from './components/games-api-p2/games-api-p2.component';
+import { CodeBlockComponent } from './shareables/components/code-block/code-block.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +41,10 @@ import { HighlightJsModule } from 'ngx-highlight-js';
     ValidationComponent,
     RouterComponent,
     MiddlewareComponent,
+    GamesAPIComponent,
+    mayaTxtComponent,
+    GamesApiP2Component,
+    CodeBlockComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HighlightJsModule],
   providers: [],

@@ -55,28 +55,6 @@ section {
   }
 }
 
-.previous {
-  color: #cccccc;
-
-  h4 {
-    text-decoration-line: underline;
-
-    a {
-      color: #cccccc;
-    }
-  }
-
-  &:hover {
-    color: #000000;
-
-    h4 {
-      a {
-        color: color(primary);
-      }
-    }
-  }
-}
-
 .notice {
   padding: 15px;
   background-color: #eeeeee;

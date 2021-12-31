@@ -1,0 +1,20 @@
+{
+  "imports": [
+    "import { Service } from \"@mayajs/core\"",
+    "import { MongoDBServices } from \"@maya/mongo\""
+  ],
+  "decorator": "@Service()",
+  "class": {
+    "heading": "export class SampleServices {",
+    "model": {
+      "heading": "get model() {",
+      "content": [
+        "const db = this.mongo.database(\"main\");",
+        "return db.instance.model(\"Sample\");"
+      ],
+      "ending": "}"
+    },
+    "constructor": "constructor(private mongo: MongoDbServices) {} ",
+    "ending": "}"
+  } 
+}

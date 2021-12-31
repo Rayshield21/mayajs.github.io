@@ -12,7 +12,8 @@ import { DatabasesComponent } from "./components/databases/databases.component";
 import { ValidationComponent } from "./components/validation/validation.component";
 import { RouterComponent } from "./components/router/router.component";
 import { MiddlewareComponent } from "./components/middleware/middleware.component";
-
+import { GamesAPIComponent } from "./components/games-api/games-api.component";
+import { GamesApiP2Component } from "./components/games-api-p2/games-api-p2.component";
 const routes: Routes = [
   {
     path: "get-started",
@@ -26,6 +27,8 @@ const routes: Routes = [
       { path: "validation", component: ValidationComponent },
       { path: "routing", component: RouterComponent },
       { path: "middlewares", component: MiddlewareComponent },
+      {path: "games-api",component: GamesAPIComponent,},
+      {path: "games-api/phase-2",component: GamesApiP2Component,},
       { path: "", redirectTo: "introduction", pathMatch: "full" },
       { path: "**", redirectTo: "introduction", pathMatch: "full" },
     ],

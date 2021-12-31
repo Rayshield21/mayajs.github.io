@@ -13,18 +13,17 @@ section {
   padding-right: 5rem;
 }
 
-.pre-wrap{
-  white-space: pre-wrap;
-}
-
 .topic {
   padding-bottom: 1.5rem;
+}
+
+.list-none{
+  list-style: none;
 }
 
 ul.content {
   padding-left: 4rem;
 }
-
 .content {
   padding-left: 2rem;
 }
@@ -47,6 +46,10 @@ ul.content {
   }
 }
 
+.code-comment{
+  color:#afafaf;
+}
+
 .code {
   background-color: #d6d6d64d;
   margin: 1.5rem 2rem;
@@ -63,6 +66,33 @@ ul.content {
 }
 
 .next {
-  text-decoration-line: underline;
-  color: color(primary);
+  h4 {
+    text-decoration-line: underline;
+
+    a {
+      color: color(primary);
+    }
+  }
+}
+
+.previous {
+  color: #cccccc;
+
+  h4 {
+    text-decoration-line: underline;
+
+    a {
+      color: #cccccc;
+    }
+  }
+
+  &:hover {
+    color: #000000;
+
+    h4 {
+      a {
+        color: color(primary);
+      }
+    }
+  }
 }

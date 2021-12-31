@@ -1,0 +1,15 @@
+$colors: (primary: #dd1f02,
+  secondary: #000,
+  paragraphs: #5e5e5e,
+  light: #eeeeee,
+);
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
+
+span{
+  color: color(primary);
+  font-weight: 600;
+  font-size: 1.2em;
+}

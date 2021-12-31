@@ -1,4 +1,44 @@
 /* You can add global styles to this file, and also import other style files */
+$colors: (primary: #dd1f02,
+  secondary: #000,
+  paragraphs: #5e5e5e,
+  light: #eeeeee,
+);
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
+
+.bgTheme-{
+  &primary{
+    background-color: color(primary);
+  }
+  &secondary{
+    background-color: color(secondary);
+  }
+  &paragraphs {
+    background-color: color(paragraphs);
+  }
+  &light{
+    background-color: color(light);
+  }
+}
+
+.textTheme-{
+  &primary{
+    color: color(primary);
+  }
+  &secondary{
+    color: color(secondary);
+  }
+  &paragraphs{
+    color: color(paragraphs);
+  }
+  &light{
+    color: color(light);
+  }
+}
+
 body,
 html {
   font-family: 'Rubik', sans-serif;
@@ -26,3 +66,6 @@ body::-webkit-scrollbar-thumb {
   background: #d6d6d64d !important;
 }
 
+.code-comment{
+  color:#afafaf;
+}
