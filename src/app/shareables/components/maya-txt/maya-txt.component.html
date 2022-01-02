@@ -1,3 +1,3 @@
-<ng-container [ngSwitch]="mayaTxt" *ngFor="let mayaTerm of mayaTerms">
-    <span *ngSwitchCase="mayaTerm.switchValue">{{mayaTerm.name}}</span>
+<ng-container [ngSwitch]="mayaTxt" *ngFor="let highlight of highlights">
+    <span *ngSwitchCase="highlight.switchValue">{{highlight.name}}</span>
 </ng-container>
