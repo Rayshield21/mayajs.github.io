@@ -1,14 +1,27 @@
 <code [ngSwitch]="code">
   <ng-container *ngSwitchCase="'mainIndex'">
-    <span class='code-comment pl-5'>From index.ts</span>
     <pre class="text-warning">
-      {{index}}
+      {{sourceCode.mainIndex}}
     </pre>
   </ng-container>
   <ng-container *ngSwitchCase="'sampleService'">
-    <span class='code-comment'>From sample.service.ts</span>
     <pre class="text-warning m-0">
-      {{service}}
+      {{sourceCode.sampleService}}
+    </pre>
+  </ng-container>
+  <ng-container *ngSwitchCase="'sampleController'">
+    <pre class="text-warning m-0">
+      {{sourceCode.sampleController}}
+    </pre>
+  </ng-container>
+  <ng-container *ngSwitchCase="'gameModel'">
+    <pre class="text-warning">
+      {{sourceCode.gameModel}}
+    </pre>
+  </ng-container>
+  <ng-container *ngSwitchCase="'mongo'">
+    <pre class="text-warning">
+      {{sourceCode.mongo}}
     </pre>
   </ng-container>
 </code>
