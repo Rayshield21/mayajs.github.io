@@ -6,14 +6,48 @@
   <div class="topic">
     <h3>Overview of Controllers and Services</h3>
     <p class="content">
-      Before we proceed to make changes in the boilerplate, let's explore the structure of the two files namely <span class='font-italic'>sample.service.ts</span> and <span class='font-italic'>sample.controller.ts</span>
+      Before you start making in the boilerplate, let's explore the structure of the two files namely <span class='font-italic'>sample.service.ts</span> and <span class='font-italic'>sample.controller.ts</span>
     </p>
+    <app-code className="content" [directory]="directory.sampleService" code="sampleService"></app-code>
+    <app-code className="content" [directory]="directory.sampleController" code="sampleController"></app-code>
+    <p class="content">
+      The idea of the two components are as follows:
+    </p>
+    <ul class="content" *ngFor="let component of components">
+      <li><span class="textTheme-primary font-weight-bold">{{component.name}}:</span> {{component.description}}</li>
+    </ul>
+  </div>
+  <div class="topic">
+    <h3>Modifying boilerplate for your use case</h3>
+    <p class="content">
+      Now that you have reviewed those two components. Its time to remove them by deleting the sample folder inside controllers folder. You will use your <app-maya-text mayaTxt="cli"></app-maya-text> to generate both your model, controller, and service.
+    </p>
+    <p class="content font-italic">Note: Since MongoDB is the required database for this project, you will pick mongo in the cli when you generate the model.</p>
     <div class="content code bg-dark">
-      <app-code-block code="sampleService"></app-code-block>  
+      <code>
+        <pre class="text-warning">
+          maya generate router controllers/games/games
+        </pre>
+      </code>
     </div>
     <div class="content code bg-dark">
-      
+      <code>
+        <pre class="text-warning">
+          maya generate model models/game
+        ? Choose a schema (Use arrow keys)
+        > mongo
+          sql
+        </pre>
+      </code>
     </div>
+    <p class="content">
+      Navigate to your newly generated model and enter the following
+    </p>
+    <app-code className="content" [directory]="directory.gameModel" code="gameModel"></app-code>
+    <p class="content">
+      Navigate to {{directory.mongo}} and enter the following to look like this
+    </p>
+    <app-code className="content" [directory]="directory.mongo" code="mongo"></app-code>
   </div>
   <div class="row justify-content-between pr-2 mb-5">
     <div class="col-md-6 text-left previous">
