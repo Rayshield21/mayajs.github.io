@@ -23,6 +23,7 @@ import { GamesAPIComponent } from './components/games-api/games-api.component';
 import { mayaTxtComponent } from './shareables/components/maya-txt/maya-txt.component';
 import { GamesApiP2Component } from './components/games-api-p2/games-api-p2.component';
 import { CodeBlockComponent } from './shareables/components/code-block/code-block.component';
+import { CodeComponent } from './shareables/components/code/code.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +46,7 @@ import { CodeBlockComponent } from './shareables/components/code-block/code-bloc
     mayaTxtComponent,
     GamesApiP2Component,
     CodeBlockComponent,
+    CodeComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HighlightJsModule],
   providers: [],
