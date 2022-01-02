@@ -1,0 +1,9 @@
+{
+  "outer": "~/my_projects/",
+  "root": "games-api/",
+  "mainIndex": "games-api/src/index.ts",
+  "gameModel": "games-api/src/models/game.model.ts",
+  "sampleService": "games-api/src/controllers/sample/sample.service.ts",
+  "sampleController": "games-api/src/controllers/sample/sample.controller.ts",
+  "mongo": "games-api/src/databases/mongo.ts"
+}

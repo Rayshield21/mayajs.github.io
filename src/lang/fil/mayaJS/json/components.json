@@ -1,0 +1,14 @@
+[
+  {
+    "name": "model",
+    "description": "responsible for setting a database schema/model"
+  },
+  {
+    "name":"controller",
+    "description": "responsible for generating RESTful routes and processing requests."
+  },
+  {
+    "name": "service",
+    "description": "responsible for API logic. In other words, sets functions for database interactions which are called upon by the controller"
+  }
+]

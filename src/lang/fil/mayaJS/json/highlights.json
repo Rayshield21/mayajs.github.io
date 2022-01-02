@@ -1,0 +1,30 @@
+[
+  {
+    "name": "MayaJS",
+    "switchValue": "maya"
+  },
+  {
+    "name": "@mayajs/core",
+    "switchValue": "core"
+  },
+  {
+    "name": "@mayajs/common",
+    "switchValue": "common"
+  },
+  {
+    "name": "@mayajs/router",
+    "switchValue": "router"
+  },
+  {
+    "name": "MayaJS CLI",
+    "switchValue": "cli"
+  },
+  {
+    "name": "@mayajs/mongo",
+    "switchValue": "mongo"
+  },
+  {
+    "name": "@mayajs/sql",
+    "switchValue": "sql"
+  }
+]
