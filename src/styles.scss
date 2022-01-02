@@ -3,39 +3,20 @@ $colors: (primary: #dd1f02,
   secondary: #000,
   paragraphs: #5e5e5e,
   light: #eeeeee,
+  scrollbarLight: #ffc1c1,
+  scrollbarDark: #ff7b7b
 );
 
 @function color($color-name) {
   @return map-get($colors, $color-name);
 }
 
-.bgTheme-{
-  &primary{
-    background-color: color(primary);
+@each $name, $color in $colors{
+  .bgTheme-#{$name}{
+    background-color: $color;
   }
-  &secondary{
-    background-color: color(secondary);
-  }
-  &paragraphs {
-    background-color: color(paragraphs);
-  }
-  &light{
-    background-color: color(light);
-  }
-}
-
-.textTheme-{
-  &primary{
-    color: color(primary);
-  }
-  &secondary{
-    color: color(secondary);
-  }
-  &paragraphs{
-    color: color(paragraphs);
-  }
-  &light{
-    color: color(light);
+  .textTheme-#{$name}{
+    color: $color;
   }
 }
 
@@ -61,6 +42,10 @@ body::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background-color: #ff7b7b;
   outline: 1px solid slategrey;
+}
+
+pre{
+  margin: 0 !important;
 }
 .textarea {
   background: #d6d6d64d !important;
